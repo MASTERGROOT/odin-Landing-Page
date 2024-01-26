@@ -1,0 +1,81 @@
+.bg_img{
+    background-image: url(https://media.giphy.com/media/5EJHDSPpFhbG0/giphy.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 500px;
+    
+}
+#BTT {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 50px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:white; /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+@keyframes bigger {
+    from {background-color: white;}
+    to {background-color: #666; scale: 1.5;}
+    
+}
+
+#BTT:hover {
+    animation-name: bigger;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+
+}
+
+
+h1{
+    font-size: 60px;
+}
+
+.card_size{
+    width: 18rem;
+    border: solid;
+}
+p{
+    font-size: 30px;
+    font-style: oblique;
+}
+br{
+    display: block;
+    margin-bottom: 2em;
+}
+.icon_size{
+    height: 50px;
+    width: 50px;
+}
+@media only screen and (min-width:1500px) {
+    .bg_img{
+        height: 600px;
+    }
+}
+@media only screen and (max-width:883px) {
+    .card_flex{
+        flex-direction: column;
+    }
+    .p_card{
+        padding-bottom: 30px;
+    }
+    #Picture{
+        align-items: center;
+    }
+    .pic_disply{
+        width: 200px;
+        height: 200px;
+        
+    }
+    .ali_self{
+        align-self: center;
+    }
+}
